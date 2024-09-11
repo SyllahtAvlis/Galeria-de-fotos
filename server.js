@@ -14,6 +14,10 @@ app.get('/sobre', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'sobre.html'));
 });
 
+app.get('/galeria', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'galeria.html'));
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://127.0.0.1: ${port}`);
 });
